@@ -1,0 +1,84 @@
+﻿<Window x:Class="Basic_Responsive_Layouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Basic_Responsive_Layouts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <!--Part 1-->
+        
+        <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle 
+            Fill="Red"/> -->
+        <!--Grid.Row = 0 Grid.Column = 0-->
+        <!--
+
+        <Rectangle
+            Fill="Blue"
+            Grid.Row="1"
+            Grid.Column="1"/>
+
+        <Rectangle
+            Fill="Green"
+            Grid.Row="2"/>
+
+        <Rectangle
+            Fill="Yellow"
+            Grid.Column="2"
+            Grid.Row="3"/>-->
+
+        <!--Part 2-->
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu Bar -->
+        <Rectangle
+            Fill="Blue"/>
+
+        <!-- Content -->
+        <Grid
+            Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle
+                Fill="LightGray"/>
+
+            <Rectangle
+                Fill="DarkGray"
+                Grid.Column="1"/>
+
+            <Rectangle
+                Fill="Gray"
+                Grid.Column="2"/>
+            
+        </Grid>
+
+        <!-- Footer -->
+        <Rectangle
+            Fill="Red"
+            Grid.Row="2"/> 
+
+    </Grid>
+</Window>
